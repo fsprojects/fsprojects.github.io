@@ -109,7 +109,9 @@
               });
 
               $.each(repos, function (i, repo) {
-                addRepo(repo);
+		if (!repo.name.startsWith('/zzarchive-')) {
+                  addRepo(repo);
+		}
               });
 
               // Sort by most-recently pushed to.
