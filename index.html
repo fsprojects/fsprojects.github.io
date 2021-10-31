@@ -109,9 +109,9 @@
               });
 
               $.each(repos, function (i, repo) {
-		if (!repo.name.startsWith('/zzarchive-')) {
+                if (!repo.name.startsWith('zzarchive-')) {
                   addRepo(repo);
-		}
+                }
               });
 
               // Sort by most-recently pushed to.
